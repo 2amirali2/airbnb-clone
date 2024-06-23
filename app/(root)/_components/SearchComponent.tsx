@@ -15,7 +15,7 @@ const SearchComponent = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="flex items-center gap-x-2 font-bold border rounded-full w-fit px-4 py-2">
+        <div className="flex items-center font-bold border rounded-full w-fit sm:px-4 sm:py-2 p-2">
           <p>Anywhere</p>
           <p className="border-r border-l px-2">Any Weeks</p>
           <p>Any Guests</p>
