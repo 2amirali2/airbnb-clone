@@ -25,19 +25,18 @@ const CategoryShowcase = () => {
         <Link
         href={pathname + "?" + createQueryString("filter", category.name)}
           key={category.id}
-          className={cn("flex flex-col items-center hover:opacity-100 hover:border-b-2 hover:border-black text-xs opacity-60  transition duration-200 px-2 ", 
+          className={cn("flex flex-col items-center hover:opacity-100 hover:border-b-2 hover:border-black text-xs opacity-60 text-center transition duration-200 px-2 ", 
             search === category.name && "opacity-100 border-b-2 border-black"
           )}
         >
-          <div className="relative h-8 w-8">
             <Image
               src={category.imageUrl}
               alt={category.name}
-              fill
+              width={30}
+              height={30}
               className="object-contain"
             />
-          </div>
-          <span className="py-2">{category.title}</span>
+          <span className="py-2 truncate">{category.title}</span>
         </Link>
       ))}
     </div>
