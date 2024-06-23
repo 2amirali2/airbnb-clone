@@ -32,8 +32,8 @@ const CategoryShowcase = () => {
             <Image
               src={category.imageUrl}
               alt={category.name}
-              width={30}
-              height={30}
+              width={26}
+              height={26}
               className="object-contain"
             />
           <span className="py-2 truncate">{category.title}</span>
